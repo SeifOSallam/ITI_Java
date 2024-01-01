@@ -62,7 +62,7 @@ public class Lesson3 {
         int occ = 0;
         int currindex = 0;
         while (currindex < s.length()) {
-            if (s.charAt(currindex) == t.charAt(0)) {
+            if (s.charAt(currindex) == t.charAt(0) && currindex + t.length() <= s.length()) {
                 String sub = s.substring(currindex, currindex+t.length());
                 currindex += t.length();
                 occ++;
